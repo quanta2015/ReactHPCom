@@ -1,0 +1,120 @@
+.sc-Img02 {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  width: 100%;
+  max-width: var(--sys-wid);
+
+  .m-bd {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+    .m-item {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      padding: 30px 0;
+
+      &>.m-img {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        img{
+          width: 100%;
+        }
+      }
+
+      &>.m-cnt {
+        width: 100%;
+        margin-top: 2rem;
+        text-align: justify;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .m-cnt-g1{
+          color: var(--clr-grdt);
+          text-align: center;
+        }
+        .m-cnt-g2{
+          text-indent: 3rem;
+        }
+
+        &>.m-btn{
+          margin-top: 1.5rem;
+          border: 1px none #000;
+          border-radius: 20px;
+          align-self: flex-end;
+          button{
+            width: 7rem;
+          }
+        }
+
+      }
+
+
+
+
+
+    }
+  }
+}
+@media all and (min-width: 500px) {
+  .sc-Img02{
+    div .m-item:nth-last-child(1):first-child,
+    .m-item:nth-last-child(1):first-child~.m-item{
+      width: 55rem!important;
+      .m-cnt-g1{
+        font-size: 2.5rem;
+        font-weight: bold;
+      }
+      .m-cnt-g2{
+        font-size:2.0rem;
+        margin-top: 1rem;
+      }
+    }
+    div .m-item:nth-last-child(2):first-child,
+    .m-item:nth-last-child(2):first-child~.m-item {
+      width: 40rem!important;
+      .m-cnt-g1{
+        font-size:1.8rem;
+        font-weight: bold;
+      }
+      .m-cnt-g2{
+        margin-top: 1rem;
+        font-size: 1.6rem;
+      }
+    }
+    .m-item {
+      width: 25rem;
+      .m-cnt-g1{
+        font-size: 1.8rem;
+        font-weight: bold;
+      }
+      .m-cnt-g2{
+        margin-top: 1rem;
+        font-size: 1.6rem;
+      }
+    }
+  }
+
+}
+@media all and (max-width: 499px){
+  .sc-Img02{
+    .m-item {
+      width: 100%;
+      .m-cnt-g1{
+        font-size: 1.8rem;
+        font-weight: bold;
+      }
+      .m-cnt-g2{
+        margin-top: 1rem;
+        font-size: 1.6rem;
+      }
+    }
+  }
+}
