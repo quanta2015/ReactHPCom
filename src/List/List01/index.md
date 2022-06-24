@@ -37,7 +37,7 @@ const data = {
           "大変ご不便おかけいたしますが、引き続きよろしくお願い申し上げます。"],
     list:["ミアテストプラチナ","ミアテスト膵がん","ミアテストアルツハイマー型認知症"],
     }],
-  line:  line,
+  line:line,
   id1: id1,
   id2: id2,
   id3: id3
@@ -51,6 +51,7 @@ export default () => (
       <span style={s} onClick={setId2.bind(this,!id2)}>ID2</span>
       <span style={s} onClick={setId3.bind(this,!id3)}>ID3</span>
     </div>
+
     <List01 data={data} />
   </div>
   )

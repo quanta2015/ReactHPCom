@@ -21,6 +21,10 @@ const Article =({data})=> {
           <img src={data.img} />
         </div>}
       </div>
+      {data.showBtn &&
+      <div className="m-ft">
+        <a className="btn01" href={data.btn.url}>{data.btn.name}</a>
+      </div>}
     </div>
   )
 }

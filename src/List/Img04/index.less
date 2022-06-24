@@ -1,0 +1,45 @@
+.sc-img04 {
+  display: flex;
+  flex-direction: column;
+  background:#fff;
+
+  .m-img {
+    margin: 15px 0;
+
+    & > img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover !important;
+    }
+  }
+
+  .m-bd{
+    display: flex;
+    
+    .m-title{
+      font-size: 24px;
+      color: #54c1c8;
+      margin-right: 15px;
+      text-align: center;
+      width: calc((100%-15px)/2);
+    }
+
+    .m-cnt{
+      width: calc((100% - 15px)/2);
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .m-bd{
+    flex-direction: column;
+
+    .m-title{
+      margin:0 0 15px 0 !important;
+    }
+
+    .m-cnt,.m-title{
+      width: 100% !important;
+    }
+  }
+}
