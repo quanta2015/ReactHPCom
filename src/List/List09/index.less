@@ -1,0 +1,109 @@
+.sc-list09 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: var(--sys-wid);
+  margin: auto;
+  background: #fff;
+  .sc-title {
+    justify-content: left;
+    margin: 1rem 0;
+    ::before {
+      display: inline-block;
+      width: 3rem;
+      height: 3rem;
+      margin-right: 5rem;
+      vertical-align: sub;
+      background: var(--clr-main);
+      border-radius: 50%;
+      content: '';
+    }
+    & > span {
+      margin-left: 3rem;
+    }
+  }
+  .line {
+    border-bottom: 1px none rgb(238, 238, 238);
+  }
+  .m-bd {
+    display: flex;
+    flex-direction: column;
+
+    .m-item {
+      width: 100%;
+      padding: 1rem 1.6rem;
+      font-weight: bold;
+      font-size: 1.6rem;
+      * {
+        margin: 6px 0;
+      }
+      & > .m-bdy {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: flex-start;
+        justify-content: space-between;
+        border-bottom: 2px solid #eee;
+        & > .m-lt {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: nowrap;
+          width: 50%;
+
+          & > .m-lb {
+            display: block;
+            width: max-content;
+            padding: 3px 10px;
+            color: gray;
+            font-size: 2rem;
+          }
+          & > .m-bk {
+            background-color: rgba(202, 235, 255, 0.678);
+            border-radius: 10px;
+          }
+          & > .title {
+            width: max-content;
+            margin: 6px 2rem;
+            color: var(--clr-main);
+            font-size: 2.5rem;
+          }
+        }
+        & > .m-cnt {
+          max-width: 50%;
+          line-height: 3rem;
+        }
+      }
+      .m-line {
+        border-bottom: 2px solid var(--clr-sub);
+      }
+    }
+  }
+}
+@media all and (max-width: 500px) {
+  .sc-list09 {
+    .m-bdy {
+      flex-direction: column !important;
+      align-items: center !important;
+      font-size: 1.4rem !important;
+      & > .m-lt {
+        width: 100% !important;
+        padding: 0 1.6rem;
+        & > .m-lb {
+          width: 40% !important;
+          font-size: 1.6rem !important;
+        }
+        & > .title {
+          width: 60% !important;
+          font-size: 1.6rem !important;
+        }
+      }
+      & > .m-cnt {
+        max-width: 90% !important;
+        margin-top: 2rem !important;
+      }
+    }
+    .m-cnt {
+      margin-top: unset !important;
+    }
+  }
+}

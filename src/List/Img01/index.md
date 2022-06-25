@@ -1,4 +1,3 @@
-
 ## Img01
 
 - line `boolean`: 标题栏目的显示模式
@@ -7,7 +6,8 @@
 - list `array`: ITEM 对象
 
 ### ITEM
- `cnt` 和 `list` 只有一个可以显示。
+
+`cnt` 和 `list` 只有一个可以显示。
 
 - img `string`: 图片链接
 - title `string`: 一级标签
@@ -16,12 +16,11 @@
 - list `array`: 内容数组
 
 ```tsx
-import React, { useState, useEffect } from 'react';
 import { Img01 } from 'japanCom';
+import React, { useState } from 'react';
 
-const [line, setLine] = useState(true)
-const [id, setId] = useState(true)
-
+const [line, setLine] = useState(true);
+const [id, setId] = useState(true);
 
 const s = {
   padding: '10px 15px',
@@ -31,39 +30,47 @@ const s = {
   fontSize: '16px',
   cursor: 'pointer',
   transition: '.2 ease',
-  flex: 1, 
-}
+  flex: 1,
+};
 
 const data = {
-  title:"Img01",
-  list:[{
-    //img: "https://mqcai.top/cdn/hpcom_article.jpg",
-    title: "2022.6.10",
-    label: "HZNU",
-    cnt: "",
-    list:[ "銀座ベレアージュクリニックPCRセンターについて",
-          "PCRセンター専用ホームページ",
-          "を開設いたしました。料金やお問合せはホームページ内の連絡先にお願いします。",
-          "美容点滴の問合せ先とは異なりますのでご了承下さい。"],
+  title: 'Img01',
+  list: [
+    {
+      img: 'https://mqcai.top/cdn/hpcom_article.jpg',
+      title: '2022.6.10',
+      label: 'HZNU',
+      cnt: '',
+      list: [
+        '銀座ベレアージュクリニックPCRセンターについて',
+        'PCRセンター専用ホームページ',
+        'を開設いたしました。料金やお問合せはホームページ内の連絡先にお願いします。',
+        '美容点滴の問合せ先とは異なりますのでご了承下さい。',
+      ],
     },
     {
-    //img: "https://mqcai.top/cdn/hpcom_article.jpg",
-    title: "2022.6.10",
-    label: "HZNU",
-    cnt:"测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字",
-    list:[],
-    }],
-  line:  line,
+      img: 'https://mqcai.top/cdn/hpcom_article.jpg',
+      title: '2022.6.10',
+      label: 'HZNU',
+      cnt: '测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字',
+      list: [],
+    },
+  ],
+  line: line,
   id: id,
-}
+};
 
 export default () => (
   <div>
-    <div className="m-btn" style={{"display": "flex"}}>
-      <span style={s} onClick={setLine.bind(this,!line)}>LINE</span>
-      <span style={s} onClick={setId.bind(this,!id)}>ID</span>
+    <div className="m-btn" style={{ display: 'flex' }}>
+      <span style={s} onClick={setLine.bind(this, !line)}>
+        LINE
+      </span>
+      <span style={s} onClick={setId.bind(this, !id)}>
+        ID
+      </span>
     </div>
     <Img01 data={data} />
   </div>
-  )
+);
 ```
