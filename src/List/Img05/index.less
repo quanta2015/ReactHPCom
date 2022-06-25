@@ -1,7 +1,10 @@
 .sc-img05 {
+  width: 100%;
   display: flex;
   flex-direction: column;
   background:#fff;
+  max-width: var(--sys-wid);
+  margin:0 auto;
 
   .m-img {
     width: 100%;
@@ -18,14 +21,20 @@
       margin-top:0;
     }
   }
+
+  .m-cnt{
+    font-size: 1.6rem;
+  }
 }
 
 @media screen and (max-width: 600px) {
-  .m-img {
-    flex-direction: column;
-
-    & > img{
-      width: 100% !important;
+  .sc-img05{
+    .m-img {
+      flex-direction: column;
+  
+      & > img{
+        width: 100% !important;
+      }
     }
   }
 }
