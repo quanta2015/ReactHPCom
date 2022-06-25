@@ -12,9 +12,10 @@ export { default as List06 } from './List/List06';
 
 export { default as Img01 } from './List/Img01';
 export { default as Img04 } from './List/Img04';
+export { default as Img05 } from './List/Img05';
 
-export { default as Map    } from './Part/Map';
-export { default as Article} from './Part/Article';
-export { default as Carousel}from './Part/Carousel';
+export { default as Map } from './Part/Map';
+export { default as Article } from './Part/Article';
+export { default as Carousel } from './Part/Carousel';
 
 
