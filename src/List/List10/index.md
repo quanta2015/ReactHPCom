@@ -12,7 +12,7 @@
 - icon `string`: 图标链接
 - title `string`: 一级标签
 - list `array`: 内容数组
-- cnt `string`：内容
+- cnt `string`：段落内容
 - src `string`：跳转链接
 - link `string`：跳转链接说明
 

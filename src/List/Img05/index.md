@@ -1,6 +1,12 @@
 
 ## Img05
 
+- label `string`: 标题文本
+- cnt `string`: 段落内容
+- img1 `string`：图片链接
+- img2 `string`：图片链接
+
+
 ```tsx
 import React, { useState, useEffect } from 'react';
 import { Img05 } from 'japanCom';
