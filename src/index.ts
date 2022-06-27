@@ -12,7 +12,7 @@ export { default as List07 } from './List/List07';
 export { default as List08 } from './List/List08';
 export { default as List09 } from './List/List09';
 export { default as List10 } from './List/List10';
-
+export { default as List11 } from './List/List11';
 
 export { default as Img01 } from './List/Img01';
 export { default as Img02 } from './List/Img02';
