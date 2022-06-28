@@ -19,9 +19,9 @@ const Img05 =({data})=> {
           <img src={data.img2} />
         </div>}
         
-      <div className="m-tl">
+      <div>
         {data?.label &&
-          <label> {data?.label}</label>
+          <label className={data.bg? "bg":""}> {data?.label}</label>
         }</div>
       <div className='m-cnt'>{data?.cnt}</div>
     </div>

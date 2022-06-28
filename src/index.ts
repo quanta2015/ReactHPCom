@@ -13,12 +13,14 @@ export { default as List08 } from './List/List08';
 export { default as List09 } from './List/List09';
 export { default as List10 } from './List/List10';
 export { default as List11 } from './List/List11';
+export { default as List12 } from './List/List12';
 
 export { default as Img01 } from './List/Img01';
 export { default as Img02 } from './List/Img02';
 export { default as Img03 } from './List/Img03';
 export { default as Img04 } from './List/Img04';
 export { default as Img05 } from './List/Img05';
+export { default as Img06 } from './List/Img06';
 
 export { default as Map } from './Part/Map';
 export { default as Article } from './Part/Article';

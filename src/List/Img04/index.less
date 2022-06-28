@@ -21,15 +21,26 @@
     
     .m-title{
       font-size: 24px;
-      color: var(--clr-main);
       margin-right: 15px;
       text-align: center;
       width: calc((100%-15px)/2);
+
+      &>span{
+        color: var(--clr-main);
+        border-bottom: none;
+      }
     }
 
     .m-cnt{
       width: calc((100% - 15px)/2);
       font-size: 1.6rem;
+    }
+
+    .line{
+      &>span{
+        color: #000;
+        border-bottom: 4px solid var(--clr-main);
+      }
     }
   }
 }

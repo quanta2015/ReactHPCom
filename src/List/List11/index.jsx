@@ -5,7 +5,7 @@ import './index.less'
 
 const List11 =({data})=> {
   return (
-    <div className="sc-List11">
+    <div className="sc-list11">
       <Title title={data?.title} line={data?.line} />
 
       {data?.list.map((item,i) =>
