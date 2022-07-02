@@ -14,7 +14,7 @@ const List11 =({data})=> {
               <span>{item?.title}</span>
               <label className={data.round? "round":""}>{item?.label}</label>
             </div>
-            <div className={data.bottom? "bottom":""}><div></div>{item?.cnt}</div>
+            <div><div></div><spans className={data.bottom? "bottom":""}>{item?.cnt}</spans></div>
           </div>
       )}
     </div>
