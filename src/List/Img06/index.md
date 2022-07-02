@@ -5,12 +5,15 @@
 - list `array`: ITEM 对象
 - bgColor `bgColor`：背景颜色
 - line `boolean`: 标题栏目的显示模式
+- color `string`：底色的主色调(支持以下选择)
+  - blue|cyan|geekblue|gold|green|grey|lime|magenta|orange|purple|red|volcano|yellow
 
 ## ITEM
 - label `string`：一级标签
 - title `string`：二级标签
 - cnt `string`：段落内容
 - img `string`：图片链接
+
 
 
 ```tsx
@@ -43,7 +46,7 @@ const data = {
     cnt:"加齢に伴い私たちの身体は、しみ・しわ・たるみの増加、視力・聴力の低下、筋力や抵抗力の減少など、さまざまな老化サインを見せ始めます。そんな身体の衰えに対し、体質改善や全身の若返りを行う究極のエイジングケアのことです。",
     img: 'https://mqcai.top/cdn/hpcom_article.jpg',
   },],
-  bgColor:"#faebd7",
+  color:"orange",
   line: line,
 }
 
