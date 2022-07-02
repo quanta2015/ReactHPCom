@@ -5,7 +5,7 @@ import './index.less'
 
 const Img06 =({data})=> {
   return (
-    <div className="sc-img06">
+    <div className="sc-img06" style={{'--bgColor':data?.bgColor}}>
       <Title title={data?.title} line={data?.line} />
       {data?.list.map((item,i)=>
         <div className="m-item" key={i}>

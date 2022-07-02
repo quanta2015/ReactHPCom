@@ -6,7 +6,7 @@ import './index.less'
 const Img05 =({data})=> {
   return (
     <div className="sc-img05">
-
+      <Title title={data?.title} line={data?.line} />
      {data?.img1 &&
         <div className="m-img">
           <img src={data.img1} />
