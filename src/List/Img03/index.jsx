@@ -15,9 +15,10 @@ const Img03 = ({ data }) => {
                 </div>
                 <div className={`m-rt ${!item.change ^ data.change ? 'm-ch' : ''}`}>
                   {item?.title && <Title title={item?.title} line={data?.line} />}
-                  {item?.label && (
-                    <div className={`m-lab ${data.label ? 'm-bk' : ''}`}>{item.label}</div>
-                  )}
+                  {item?.label && 
+                    data?.label &&
+                      <div className={`m-lab`}>{item.label}</div>
+                  }
                   {item?.cnt && <div className="m-cnt">{item.cnt}</div>}
                 </div>
               </div>

@@ -8,13 +8,15 @@ const List08 = ({ data }) => {
         {data?.list.map((item, i) => (
           <div className="m-item" key={i}>
             <div className="m-top">
-              {item?.label && (
-                <label className={`m-lb ${data.label ? 'm-bk' : ''}`}>{item?.label}</label>
-              )}
+            {item?.title && <div className="title">{item?.title}</div>}
             </div>
             <div className={`m-bdy ${data.line ? 'm-line' : ''}`}>
-              {item?.title && <div className="title">{item?.title}</div>}
-
+              
+              {item?.label && 
+               data?.label&&  
+              
+                <label className={`m-lb`}>{item?.label}</label>
+              }
               {item?.list[0] && (
                 <div className="m-cnt">
                   {item.list.map((o, j) => (

@@ -20,7 +20,7 @@ const Img01 = ({ data }) => {
             }
 
             <div className='m-cnt'>
-              <div className={`m-lab ${(item.cnt)?'cnt_g2':''}`}>
+              <div className={`m-lab `}>
                 <div className="m-ti">
                   {item?.title &&
                     <label>

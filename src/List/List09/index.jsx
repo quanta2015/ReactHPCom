@@ -12,8 +12,10 @@ const List09 = ({ data }) => {
           <div className="m-item" key={i}>
             <div className={`m-bdy ${data.line ? 'm-line' : ''}`}>
               <div className="m-lt">
-                {item?.label && (
-                  <div className={`m-lb ${data.label ? 'm-bk' : ''}`}>{item?.label}</div>
+                {item?.label && 
+                  data?.label&&
+                (
+                  <div className={`m-lb`}>{item?.label}</div>
                 )}
                 {item?.title && <div className="title">{item?.title}</div>}
               </div>

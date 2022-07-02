@@ -18,7 +18,8 @@
   .m-bd {
     display: flex;
     flex-direction: column;
-
+    border-top: 2px solid #eee;
+    border-bottom: 2px solid #eee;
     .m-item {
       display: flex;
       flex-direction: row;
@@ -36,12 +37,21 @@
         padding: 0 1.6rem;
         & > .title {
           color: var(--clr-main);
+          text-align: center;
           font-size: 2.5rem;
+          overflow:hidden;
+          text-overflow:ellipsis;
+          white-space:nowrap;
+          max-width: 80%;
         }
         & > .label {
           margin: unset;
           color: gray;
           font-size: 1.4rem;
+          overflow:hidden;
+          text-overflow:ellipsis;
+          white-space:nowrap;
+          max-width: 50%;
         }
       }
       & > .m-rt {
@@ -55,11 +65,17 @@
         }
       }
     }
-    .m-bd {
-      border-top: 1px solid #eee;
+    .m-bdy {
+      & + .m-bdy{
+        border-top: 1px solid #eee;
+      }
     }
   }
 }
+
+
+
+
 @media all and (max-width: 500px) {
   .sc-list07 {
     .m-item {

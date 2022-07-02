@@ -31,7 +31,7 @@
 
     .m-item {
       width: 100%;
-      padding: 1rem 1.6rem;
+      padding: 1rem 0;
       font-weight: bold;
       font-size: 1.6rem;
       * {
@@ -41,36 +41,47 @@
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
-        align-items: flex-start;
+        align-items: center;
         justify-content: space-between;
-        border-bottom: 2px solid #eee;
         & > .m-lt {
           display: flex;
           flex-direction: row;
           flex-wrap: nowrap;
           width: 50%;
+          align-items: center;
+          
 
           & > .m-lb {
             display: block;
             width: max-content;
+            max-width: 40%;
             padding: 3px 10px;
             color: gray;
-            font-size: 2rem;
-          }
-          & > .m-bk {
+            font-size: 1.5rem;
+            line-height: 3rem;
+            overflow:hidden;
+            text-overflow:ellipsis;
+            white-space:nowrap;
             background-color: rgba(202, 235, 255, 0.678);
             border-radius: 10px;
           }
           & > .title {
             width: max-content;
+            max-width: 60%;
             margin: 6px 2rem;
             color: var(--clr-main);
             font-size: 2.5rem;
+            overflow:hidden;
+            text-overflow:ellipsis;
+            white-space:nowrap;
           }
         }
         & > .m-cnt {
           max-width: 50%;
-          line-height: 3rem;
+          line-height: 3.2rem;
+          overflow:hidden;
+          text-overflow:ellipsis;
+          white-space:nowrap;
         }
       }
       .m-line {
@@ -88,18 +99,19 @@
       & > .m-lt {
         width: 100% !important;
         padding: 0 1.6rem;
+        justify-content: space-around;
         & > .m-lb {
           width: 40% !important;
           font-size: 1.6rem !important;
         }
         & > .title {
           width: 60% !important;
-          font-size: 1.6rem !important;
+          font-size: 2rem !important;
         }
       }
       & > .m-cnt {
         max-width: 90% !important;
-        margin-top: 2rem !important;
+        margin-top: 1rem !important;
       }
     }
     .m-cnt {

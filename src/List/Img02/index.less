@@ -1,3 +1,4 @@
+@import '../../global.less';
 .sc-Img02 {
   display: flex;
   flex-direction: column;
@@ -37,20 +38,34 @@
         margin-top: 2rem;
         text-align: justify;
         .m-cnt-g1 {
-          color: var(--clr-grdt);
+          width: 80%;
+          color: var(--clr-main);
           text-align: center;
+          overflow:hidden;
+          text-overflow:ellipsis;
+          white-space:nowrap;
         }
         .m-cnt-g2 {
+          min-height: 7rem;
           text-indent: 3rem;
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 3;
+          overflow: hidden;
         }
 
         & > .m-btn {
           align-self: flex-end;
           margin-top: 1.5rem;
           border: 1px none #000;
-          border-radius: 20px;
+          
+          
           button {
             width: 7rem;
+            border-radius: 6px;
+            border: 1px none #000;
+            color: var(--clr-main);
+            background-color:mix(@clr-main , #fff,20%) ;
           }
         }
       }

@@ -38,7 +38,7 @@ const data = {
       img: 'https://mqcai.top/cdn/hpcom_article.jpg',
       title: 'title标题',
       label: 'label标签',
-      cnt: '测试文字g2测试文字g2测试文字g2测试文字g2测试文字g2测试文字g2测试文字g2测试文字g2测试文字g2测试文字g2',
+      cnt: '测试文字g2测试文字g2测试文字g2测试文字g2测试文字g2测试文字g2测试文字g2测试文字g2测试文字g2测试文字g2测试文字g2测试文字g2测试文字g2',
       change: false,
     },
     {

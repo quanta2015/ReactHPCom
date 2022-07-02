@@ -18,8 +18,7 @@
       display: flex;
       flex-direction: column;
       width: 45%;
-      padding: 30px 1.6rem;
-      font-weight: bold;
+      padding: 30px 0;
       font-size: 1.6rem;
       * {
         margin: 6px 0;
@@ -28,27 +27,35 @@
         display: flex;
         flex-direction: column;
         max-width: 90%;
-        & > .m-lb {
-          display: block;
-          width: max-content;
-          padding: 3px 10px;
-          color: gray;
-          font-size: 2rem;
-        }
-        & > .m-bk {
-          background-color: rgba(202, 235, 255, 0.678);
-          border-radius: 10px;
-        }
-      }
-      & > .m-bdy {
-        border-top: 2px solid #eee;
         & > .title {
           width: 90%;
           color: var(--clr-main);
           font-size: 2.5rem;
+          font-weight: bold;  
+          overflow:hidden;
+          text-overflow:ellipsis;
+          white-space:nowrap;
+        }
+
+
+      }
+      & > .m-bdy {
+        & > .m-lb {
+          display: block;
+          width: max-content;
+          max-width: 60%;
+          padding: 3px 10px;
+          color: gray;
+          font-size: 1.5rem;
+          background-color: rgba(202, 235, 255, 0.678);
+          border-radius: 10px;
+          overflow:hidden;
+          text-overflow:ellipsis;
+          white-space:nowrap;
         }
         & > .m-cnt {
           line-height: 4rem;
+          font-weight: bold;  
         }
       }
       .m-line {

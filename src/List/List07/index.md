@@ -36,7 +36,7 @@ const data = {
   title: 'List07',
   list: [
     {
-      title: 'title主题',
+      title: 'ti',
       label: 'label副标题',
       cnt: '美容点滴の問合せ先とは異なりますのでご了承下さい。测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字',
       list: [],
@@ -52,6 +52,28 @@ const data = {
         '大変ご不便おかけいたしますが、引き続きよろしくお願い申し上げます。',
       ],
     },
+    {
+      title: 'title主题title主题title主题title主题',
+      label:
+        'label副标题label副标题label副标题label副标题label副标题label副标题label副标题label副标题label副标题label副标题',
+      cnt: '',
+      list: [
+        '取扱い中止の検査項目について',
+        '3月末で下記項目を取扱い中止とさせていただきます。',
+        '大変ご不便おかけいたしますが、引き続きよろしくお願い申し上げます。',
+      ],
+    },
+    {
+      title: 'title主题title主题title主题title主题',
+      label:
+        'label副标题label副标题label副标题label副标题label副标题label副标题label副标题label副标题label副标题label副标题',
+      cnt: '',
+      list: [
+        '取扱い中止の検査項目について',
+        '3月末で下記項目を取扱い中止とさせていただきます。',
+        '大変ご不便おかけいたしますが、引き続きよろしくお願い申し上げます。',
+      ],
+    }
   ],
   line: line,
   id: id,

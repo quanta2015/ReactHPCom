@@ -9,7 +9,7 @@ const List07 = ({ data }) => {
 
       <div className="m-bd">
         {data?.list.map((item, i) => (
-          <div className="m-item m-bd" key={i}>
+          <div className="m-item m-bdy" key={i}>
             <div className="m-lt">
               {item?.title && <div className="title">{item?.title}</div>}
               {item?.label && <div className="label">{item?.label}</div>}
